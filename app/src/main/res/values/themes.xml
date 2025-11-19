@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.InventryManage" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/light_status_bar_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.InventryManage" parent="Base.Theme.InventryManage" />
+
+    <style name="statuBarMainColor" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="txtProductAddStyle">
+        <item name="android:layout_gravity">start</item>
+        <item name="android:textSize">17sp</item>
+<!--        <item name="android:textColor">#FFF</item>-->
+        <item name="android:layout_marginTop">19dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginStart">25dp</item>
+    </style>
+
+    <style name="editTxtProductAddStyle">
+        <item name="android:inputType">text</item>
+        <item name="android:background">@drawable/product_add_input_view_bg</item>
+        <item name="android:minHeight">58dp</item>
+        <item name="android:paddingStart">7dp</item>
+        <item name="android:paddingEnd">7dp</item>
+    </style>
+
+</resources>

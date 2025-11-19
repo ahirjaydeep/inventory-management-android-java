@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DiplayProductFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color">
+
+        <TextView
+            android:id="@+id/productAddTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Product"
+            android:textColor="#fff"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="11dp"
+            android:background="#fff"
+            app:layout_constraintBottom_toTopOf="@+id/displayProductSubHeading" />
+
+        <TextView
+            android:id="@+id/displayProductSubHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:text="Products - T-shirts -White "
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productAddTxt" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="12dp"
+            android:background="#fff"
+            app:layout_constraintTop_toBottomOf="@+id/displayProductSubHeading" />
+
+        <!-- ✅ SCROLLABLE CONTENT -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintTop_toBottomOf="@id/view2"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#E0E0E0"
+                android:padding="25dp"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/diplay_product_bg"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            app:cardCornerRadius="15dp">
+
+                            <ImageView
+                                android:id="@+id/displayProductImage"
+                                android:layout_width="220dp"
+                                android:layout_height="220dp"
+                                android:src="@drawable/cloth_sample" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/displayProductName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/adlam_display"
+                            android:text="Chapti T-Shit"
+                            android:textColor="#000"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/displayProductDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/allerta"
+                            android:gravity="center"
+                            android:text="this t-shirt made for chapri people like kashyap, harshit, jihan and specialy not made for genius like jaydeep"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/displayProductStock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/allerta"
+                            android:text="Qualntity : 100"
+                            android:textColor="@color/text_color_match_theme"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/displayProductCategory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/allerta"
+                            android:text="Category : T - Shirt"
+                            android:textColor="@color/text_color_match_theme"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/displayProductPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/allerta"
+                            android:text="Price : 283"
+                            android:textColor="@color/text_color_match_theme"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/displayProductCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/allerta"
+                            android:text="Product Code 119-21"
+                            android:textColor="#626262"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/displayProductLastUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/allerta"
+                        android:text="Last update January 29, 2023 at 2.39PM"
+                        android:textColor="#ABACAF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/updateButton"
+                    android:layout_width="290dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Update"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:background="@drawable/product_display_bg" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

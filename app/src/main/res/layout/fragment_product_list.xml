@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProductListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProductListActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewProductList"
+            android:layout_width="match_parent"
+            android:layout_height="835dp"
+            android:paddingBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Stock"
+            android:textColor="#F5F5F5"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/productDescriptionBtn"
+            android:layout_width="100dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/product_activity_add_btn_bg"
+            android:text="ADD ITEMS"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TouchTargetSizeCheck" />
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:cardCornerRadius="41dp"-->
+<!--                android:background="@drawable/product_activity_add_img_btn_bg"-->
+<!--                android:layout_marginEnd="34dp"-->
+<!--                android:layout_marginBottom="34dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--            <ImageButton-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:padding="15dp"-->
+<!--                android:background="@drawable/product_activity_add_img_btn_bg"-->
+<!--                android:src="@drawable/baseline_add_24"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

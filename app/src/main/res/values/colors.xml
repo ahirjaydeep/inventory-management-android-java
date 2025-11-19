@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_status_bar_color">#101820</color>
+<!--    <color name="light_status_bar_color">#E0E0E0</color>-->
+<!--    <color name="light_status_bar_color">#16223B</color>-->
+    <color name="dark_status_bar_color">#000000</color>
+    <color name="main_color" tools:ignore="ReferenceType">@drawable/login_activity_bg</color>
+    <color name="main_color_list_background">#B65D7287</color>
+    <color name="status_bar_color">#101820</color>
+    <color name="text_color_match_theme">#2C3D6A</color>
+</resources>
