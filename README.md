@@ -21,8 +21,6 @@ It’s a big upgrade from my earlier Tic-Tac-Toe app and helped me improve both 
 
 ---
 
-## 📸 Screenshots
-
 Add your screenshots into a folder named `screenshots/` and update below if needed.
 
 ```
