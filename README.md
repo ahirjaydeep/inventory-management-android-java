@@ -83,3 +83,4 @@ Suggestions, improvements, and PRs are welcome!
 ## 🧑‍💻 Author
 
 **Jaydeep Ahir**
+[LinkedIn](https://www.linkedin.com/in/jaydeep-ahir-811743209/)
